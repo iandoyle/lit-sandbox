@@ -4,7 +4,11 @@
   "description": "practicing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "npm run watch & npm run serve",
+    "watch": "tsc-watch",
+    "prepublishOnly": "npm run build",
+    "serve": "es-dev-server --node-resolve --port 8081"
   },
   "repository": {
     "type": "git",
