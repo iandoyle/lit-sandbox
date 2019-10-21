@@ -1,0 +1,23 @@
+{
+  "name": "lit-sandbox",
+  "version": "0.0.1",
+  "description": "practicing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iandoyle/lit-sandbox.git"
+  },
+  "author": "Ian Doyle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iandoyle/lit-sandbox/issues"
+  },
+  "homepage": "https://github.com/iandoyle/lit-sandbox#readme",
+  "dependencies": {
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2"
+  }
+}
