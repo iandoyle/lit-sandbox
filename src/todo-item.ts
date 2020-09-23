@@ -21,6 +21,8 @@ export class XTodoItem extends LitElement {
     }
     span {
       padding: 0 12px;
+      cursor: pointer;
+      background: chartreuse;
     }
     form {
       display: inline-block;
