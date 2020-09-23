@@ -2,12 +2,9 @@ import { Todo } from "./interfaces";
 
 export class TodoService {
   getTodos() {
-    if (!localStorage.getItem('todos')) {
-      localStorage.setItem('todos', '[]');
-    }
-    const localstorage = JSON.parse(localStorage.getItem('todos') || '');
+    const localstorage = JSON.parse(localStorage.getItem('todos') || '[]');
     const todos: Todo[] = localstorage;
-    return todos ? todos : [];
+    return todos;
   }
 
   updateTodo(todo: Todo, index: number) {
