@@ -34,7 +34,7 @@ export class XTodoItem extends LitElement {
     <button
       @click="${ () => this.completeTodo() }"
       aria-label="mark done"
-    >✓</button>
+    >&#10004;</button>
 
     ${ this.editing
         ?
