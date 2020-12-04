@@ -6,6 +6,7 @@ declare class XTodos extends LitElement {
     todos: Todo[];
     todoService: TodoService;
     constructor();
+    static get styles(): import("lit-element").CSSResult;
     render(): import("lit-element").TemplateResult;
     updateTodo(todo: Todo, index: number): void;
     deleteTodo(todo: Todo): void;

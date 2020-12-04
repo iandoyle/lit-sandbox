@@ -1,4 +1,4 @@
-import { LitElement, html, property, customElement } from 'lit-element';
+import { LitElement, html, property, css, customElement } from 'lit-element';
 import { TodoService } from './todo.service';
 import { Todo } from './interfaces';
 import './todo-item';
@@ -13,6 +13,11 @@ class XTodos extends LitElement {
   constructor() {
     super();
     this.todos = this.todoService.getTodos();
+  }
+  static get styles() {
+    return css`
+      .hidden { display: none; }
+    `;
   }
 
   render() {
